@@ -1,4 +1,6 @@
-
+'''
+Maximum Value Contiguous subsequence
+'''
 def mvcs(A):
     B=[0]*len(A)
     if A[0]>0 :
