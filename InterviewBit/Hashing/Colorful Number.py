@@ -19,6 +19,24 @@ class Solution:
                     d.add(x)
                 #print(d)
         return 1
+       
+#-----------------------------------------------------------------------------------------
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def colorful(self, A):
+        A=str(A)
+        d=set()
+        for i in range(0,len(A)):
+            mul=1
+            for j in range(i,len(A)):
+                mul*=int(A[j])
+                if mul in d:
+                    return 0
+                else:
+                    d.add(mul)
+                #print(d)
+        return 1
                 
                 
                  
